@@ -49,7 +49,7 @@
 
 - In masked language models like BERT, each masked word (token) prediction is conditioned on the rest of the tokens in the sentence. These are received in the encoder which is why you don’t need a decoder.
 
-# GPT - Decoders
+## GPT - Decoders
 - In language scenarios decoders are used to generate next words, for example when translating text or generating stories. The outputs are words with probabilities.
 
 - Decoders also use the attention concepts and even two times. First when training models, they use Masked Multi-Head Attention which means that only the first words of the target sentence are provided so that the model can learn without cheating. This mechanism is like the MASK concept from BERT.
